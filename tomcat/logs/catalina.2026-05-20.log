@@ -1,0 +1,160 @@
+20-May-2026 22:00:31.582 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\jre
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_482-b08
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Temurin
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:00:31.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:00:31.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\HRMS_PROJECT_NEW\tomcat\conf\logging.properties
+20-May-2026 22:00:31.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-May-2026 22:00:31.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-May-2026 22:00:31.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-May-2026 22:00:31.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-May-2026 22:00:31.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:00:31.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:00:31.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\HRMS_PROJECT_NEW\tomcat\temp
+20-May-2026 22:00:31.610 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\My PC\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\My PC\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\My PC\AppData\Local\Programs\Python\Python311;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\My PC\.local\bin;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\My PC\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\My PC\AppData\Local\Microsoft\WindowsApps;C:\Users\My PC\AppData\Local\GitHubDesktop\bin;C:\Users\My PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\My PC\AppData\Local\Python\bin;C:\Users\My PC\AppData\Roaming\Python\Python311\Scripts;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\bin;C:\Users\My PC\AppData\Roaming\npm;c:\Users\My PC\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;.]
+20-May-2026 22:00:32.064 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:00:32.100 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [774] milliseconds
+20-May-2026 22:00:32.154 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-May-2026 22:00:32.154 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+20-May-2026 22:00:32.165 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs]
+20-May-2026 22:00:32.536 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [193] milliseconds.
+20-May-2026 22:00:32.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs] has finished in [405] ms
+20-May-2026 22:00:32.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples]
+20-May-2026 22:00:32.829 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples] has finished in [256] ms
+20-May-2026 22:00:32.829 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager]
+20-May-2026 22:00:32.852 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager] has finished in [23] ms
+20-May-2026 22:00:32.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS]
+20-May-2026 22:00:33.024 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-May-2026 22:00:33.029 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS] has finished in [174] ms
+20-May-2026 22:00:33.029 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager]
+20-May-2026 22:00:33.055 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager] has finished in [26] ms
+20-May-2026 22:00:33.055 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT]
+20-May-2026 22:00:33.070 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT] has finished in [15] ms
+20-May-2026 22:00:33.075 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:00:33.101 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1000] milliseconds
+20-May-2026 22:21:37.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+20-May-2026 22:21:37.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+20-May-2026 22:21:37.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+20-May-2026 22:21:37.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+20-May-2026 22:21:37.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-May-2026 22:21:37.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-May-2026 22:21:37.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\jre
+20-May-2026 22:21:37.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_482-b08
+20-May-2026 22:21:37.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Temurin
+20-May-2026 22:21:37.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:21:37.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:21:37.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\HRMS_PROJECT_NEW\tomcat\conf\logging.properties
+20-May-2026 22:21:37.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-May-2026 22:21:37.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-May-2026 22:21:37.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-May-2026 22:21:37.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-May-2026 22:21:37.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:21:37.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:21:37.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\HRMS_PROJECT_NEW\tomcat\temp
+20-May-2026 22:21:37.171 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\My PC\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\My PC\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\My PC\AppData\Local\Programs\Python\Python311;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\My PC\.local\bin;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\My PC\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\My PC\AppData\Local\Microsoft\WindowsApps;C:\Users\My PC\AppData\Local\GitHubDesktop\bin;C:\Users\My PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\My PC\AppData\Local\Python\bin;C:\Users\My PC\AppData\Roaming\Python\Python311\Scripts;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\bin;C:\Users\My PC\AppData\Roaming\npm;.]
+20-May-2026 22:21:37.421 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:21:37.442 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [437] milliseconds
+20-May-2026 22:21:37.474 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-May-2026 22:21:37.474 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+20-May-2026 22:21:37.482 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs]
+20-May-2026 22:21:37.879 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [218] milliseconds.
+20-May-2026 22:21:37.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs] has finished in [415] ms
+20-May-2026 22:21:37.897 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples]
+20-May-2026 22:21:38.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples] has finished in [221] ms
+20-May-2026 22:21:38.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager]
+20-May-2026 22:21:38.142 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager] has finished in [24] ms
+20-May-2026 22:21:38.144 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS]
+20-May-2026 22:21:38.302 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-May-2026 22:21:38.308 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS] has finished in [164] ms
+20-May-2026 22:21:38.308 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager]
+20-May-2026 22:21:38.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager] has finished in [43] ms
+20-May-2026 22:21:38.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT]
+20-May-2026 22:21:38.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT] has finished in [30] ms
+20-May-2026 22:21:38.389 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:21:38.419 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [975] milliseconds
+20-May-2026 22:26:31.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+20-May-2026 22:26:31.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+20-May-2026 22:26:31.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+20-May-2026 22:26:31.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+20-May-2026 22:26:31.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-May-2026 22:26:31.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-May-2026 22:26:31.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\jre
+20-May-2026 22:26:31.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_482-b08
+20-May-2026 22:26:31.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Temurin
+20-May-2026 22:26:31.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:26:31.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:26:31.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\HRMS_PROJECT_NEW\tomcat\conf\logging.properties
+20-May-2026 22:26:31.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-May-2026 22:26:31.963 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-May-2026 22:26:31.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-May-2026 22:26:31.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-May-2026 22:26:31.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:26:31.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:26:31.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\HRMS_PROJECT_NEW\tomcat\temp
+20-May-2026 22:26:31.974 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\My PC\AppData\Local\Programs\Python\Python311;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\My PC\.local\bin;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\My PC\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\My PC\AppData\Local\Microsoft\WindowsApps;C:\Users\My PC\AppData\Local\GitHubDesktop\bin;C:\Users\My PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\My PC\AppData\Local\Python\bin;C:\Users\My PC\AppData\Roaming\Python\Python311\Scripts;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\bin;C:\Users\My PC\AppData\Roaming\npm;.]
+20-May-2026 22:26:32.247 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:26:32.274 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [484] milliseconds
+20-May-2026 22:26:32.311 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-May-2026 22:26:32.312 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+20-May-2026 22:26:32.320 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs]
+20-May-2026 22:26:32.703 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [186] milliseconds.
+20-May-2026 22:26:32.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs] has finished in [406] ms
+20-May-2026 22:26:32.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples]
+20-May-2026 22:26:32.960 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples] has finished in [233] ms
+20-May-2026 22:26:32.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager]
+20-May-2026 22:26:32.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager] has finished in [21] ms
+20-May-2026 22:26:32.983 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS]
+20-May-2026 22:26:33.127 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-May-2026 22:26:33.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS] has finished in [148] ms
+20-May-2026 22:26:33.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager]
+20-May-2026 22:26:33.151 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager] has finished in [19] ms
+20-May-2026 22:26:33.151 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT]
+20-May-2026 22:26:33.169 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT] has finished in [18] ms
+20-May-2026 22:26:33.174 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:26:33.194 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [920] milliseconds
+20-May-2026 22:32:41.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+20-May-2026 22:32:41.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+20-May-2026 22:32:41.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+20-May-2026 22:32:41.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\jre
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_482-b08
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Temurin
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\HRMS_PROJECT_NEW\tomcat\conf\logging.properties
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-May-2026 22:32:41.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-May-2026 22:32:41.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-May-2026 22:32:41.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-May-2026 22:32:41.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:32:41.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\HRMS_PROJECT_NEW\tomcat
+20-May-2026 22:32:41.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\HRMS_PROJECT_NEW\tomcat\temp
+20-May-2026 22:32:41.693 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-8.0.482.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\My PC\AppData\Local\Programs\Python\Python311;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\My PC\.local\bin;C:\Users\My PC\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\My PC\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\My PC\AppData\Local\Microsoft\WindowsApps;C:\Users\My PC\AppData\Local\GitHubDesktop\bin;C:\Users\My PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\My PC\AppData\Local\Python\bin;C:\Users\My PC\AppData\Roaming\Python\Python311\Scripts;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\bin;C:\Users\My PC\AppData\Roaming\npm;.]
+20-May-2026 22:32:41.946 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:32:41.972 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [429] milliseconds
+20-May-2026 22:32:42.005 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-May-2026 22:32:42.005 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+20-May-2026 22:32:42.013 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs]
+20-May-2026 22:32:42.344 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [176] milliseconds.
+20-May-2026 22:32:42.359 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\docs] has finished in [346] ms
+20-May-2026 22:32:42.368 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples]
+20-May-2026 22:32:42.581 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\examples] has finished in [213] ms
+20-May-2026 22:32:42.581 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager]
+20-May-2026 22:32:42.613 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\host-manager] has finished in [32] ms
+20-May-2026 22:32:42.613 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS]
+20-May-2026 22:32:42.725 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-May-2026 22:32:42.731 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\HRMS] has finished in [118] ms
+20-May-2026 22:32:42.731 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager]
+20-May-2026 22:32:42.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\manager] has finished in [25] ms
+20-May-2026 22:32:42.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT]
+20-May-2026 22:32:42.775 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\HRMS_PROJECT_NEW\tomcat\webapps\ROOT] has finished in [19] ms
+20-May-2026 22:32:42.777 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+20-May-2026 22:32:42.788 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [817] milliseconds

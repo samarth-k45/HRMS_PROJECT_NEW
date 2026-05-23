@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard – HRMS</title>
+  <meta name="description" content="HR Management System – Admin Dashboard with live stats and charts"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <div class="app-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">HR</div>
+        <div><h1>HRMS</h1><span>Management System</span></div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Main</div>
+        <a href="dashboard.html" class="nav-link active" id="nav-dashboard">
+          <span class="nav-icon">📊</span> Dashboard
+        </a>
+        <a href="employee.html" class="nav-link admin-only" id="nav-emp">
+          <span class="nav-icon">👥</span> Employees
+        </a>
+        <a href="attendance.html" class="nav-link" id="nav-att">
+          <span class="nav-icon">📅</span> Attendance
+        </a>
+        <a href="leave.html" class="nav-link" id="nav-leave">
+          <span class="nav-icon">🏖</span> Leave
+        </a>
+        <a href="payroll.html" class="nav-link" id="nav-pay">
+          <span class="nav-icon">💰</span> Payroll
+        </a>
+        <a href="profile.html" class="nav-link" id="nav-profile">
+          <span class="nav-icon">👤</span> My Profile
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <div class="user-avatar" id="sidebar-avatar">A</div>
+          <div>
+            <div class="user-name" id="sidebar-user-name">Loading…</div>
+            <div class="user-role" id="sidebar-user-role"></div>
+          </div>
+        </div>
+        <button class="btn btn-logout" id="logout-btn">🚪 Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <!-- Header -->
+      <div class="page-header">
+        <div>
+          <h2 id="dash-greeting">Good Morning! 👋</h2>
+          <p id="dash-date">Loading date…</p>
+        </div>
+      </div>
+
+      <!-- Stat Cards -->
+      <div class="stats-grid" id="stats-grid">
+        <div class="stat-card purple glass-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value" id="stat-emp">—</div>
+          <div class="stat-label">Total Employees</div>
+        </div>
+        <div class="stat-card green glass-card">
+          <div class="stat-icon">✅</div>
+          <div class="stat-value" id="stat-present">—</div>
+          <div class="stat-label">Present Today</div>
+        </div>
+        <div class="stat-card yellow glass-card">
+          <div class="stat-icon">🏖</div>
+          <div class="stat-value" id="stat-leaves">—</div>
+          <div class="stat-label">Pending Leaves</div>
+        </div>
+        <div class="stat-card blue glass-card">
+          <div class="stat-icon">💰</div>
+          <div class="stat-value" id="stat-salary">—</div>
+          <div class="stat-label">Total Payroll</div>
+        </div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="charts-row">
+        <div class="glass-card chart-card">
+          <h3>📊 Department Distribution</h3>
+          <canvas id="deptChart" height="220"></canvas>
+        </div>
+        <div class="glass-card chart-card">
+          <h3>📅 Attendance Overview</h3>
+          <canvas id="attendChart" height="220"></canvas>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="glass-card" style="padding:24px;">
+        <h3 style="font-size:15px;color:var(--text-secondary);margin-bottom:16px;">⚡ Quick Actions</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="employee.html" class="btn btn-primary admin-only">➕ Add Employee</a>
+          <a href="leave.html"    class="btn btn-warning">🏖 Review Leaves</a>
+          <a href="payroll.html"  class="btn btn-ghost">💰 Manage Payroll</a>
+          <a href="attendance.html" class="btn btn-ghost">📅 View Attendance</a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script>
+    // ---- Auth Guard ----
+    const user = requireAuth();
+    if (!user) throw new Error('Not authenticated');
+    initSidebar();
+
+    // ---- Greeting + Date ----
+    const hour = new Date().getHours();
+    const greet = hour < 12 ? 'Good Morning' : hour < 17 ? 'Good Afternoon' : 'Good Evening';
+    document.getElementById('dash-greeting').textContent = `${greet}, ${user.name}! 👋`;
+    document.getElementById('dash-date').textContent = new Date().toLocaleDateString('en-IN', {
+      weekday:'long', year:'numeric', month:'long', day:'numeric'
+    });
+
+    // ---- Load Stats ----
+    async function loadDashboard() {
+      const data = await apiGet('api/dashboard');
+      if (!data) return;
+
+      document.getElementById('stat-emp').textContent     = data.totalEmployees;
+      document.getElementById('stat-present').textContent = data.presentToday;
+      document.getElementById('stat-leaves').textContent  = data.pendingLeaves;
+      document.getElementById('stat-salary').textContent  = formatCurrency(data.totalPayroll || data.totalSalary);
+
+      // Department chart – use employee list
+      const emps = await apiGet('api/employees');
+      const deptCounts = {};
+      if (Array.isArray(emps)) {
+        emps.forEach(e => { deptCounts[e.department] = (deptCounts[e.department] || 0) + 1; });
+      }
+      renderDeptChart(deptCounts);
+      renderAttendChart(data.presentToday, data.totalEmployees);
+    }
+
+    // ---- Department Donut Chart ----
+    function renderDeptChart(deptCounts) {
+      const ctx = document.getElementById('deptChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: Object.keys(deptCounts),
+          datasets: [{
+            data: Object.values(deptCounts),
+            backgroundColor: ['#6c63ff','#a78bfa','#38bdf8','#22c55e','#f59e0b','#ef4444'],
+            borderWidth: 0, hoverOffset: 8
+          }]
+        },
+        options: {
+          plugins: { legend: { labels: { color: '#94a3b8', font: { family:'Inter', size:12 } } } },
+          cutout: '65%'
+        }
+      });
+    }
+
+    // ---- Attendance Bar Chart ----
+    function renderAttendChart(present, total) {
+      const ctx = document.getElementById('attendChart').getContext('2d');
+      const absent = total - present;
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Present', 'Absent', 'Total'],
+          datasets: [{
+            label: 'Count',
+            data: [present, absent, total],
+            backgroundColor: ['rgba(34,197,94,0.7)','rgba(239,68,68,0.7)','rgba(108,99,255,0.7)'],
+            borderRadius: 8, borderSkipped: false
+          }]
+        },
+        options: {
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color:'#94a3b8' }, grid: { color:'rgba(255,255,255,0.05)' } },
+            y: { ticks: { color:'#94a3b8', stepSize:1 }, grid: { color:'rgba(255,255,255,0.05)' } }
+          }
+        }
+      });
+    }
+
+    loadDashboard();
+  </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+08-May-2026 20:15:28.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+08-May-2026 20:15:28.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+08-May-2026 20:15:28.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+08-May-2026 20:15:28.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-May-2026 20:15:28.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-May-2026 20:15:28.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-May-2026 20:15:28.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+08-May-2026 20:15:28.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+08-May-2026 20:15:28.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-May-2026 20:15:28.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\New folder\HRMS\tomcat
+08-May-2026 20:15:28.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\New folder\HRMS\tomcat
+08-May-2026 20:15:28.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-May-2026 20:15:28.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-May-2026 20:15:28.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-May-2026 20:15:28.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-May-2026 20:15:28.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-May-2026 20:15:28.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\New folder\HRMS\tomcat\conf\logging.properties
+08-May-2026 20:15:28.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-May-2026 20:15:28.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-May-2026 20:15:28.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-May-2026 20:15:28.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-May-2026 20:15:28.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\New folder\HRMS\tomcat
+08-May-2026 20:15:28.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\New folder\HRMS\tomcat
+08-May-2026 20:15:28.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\New folder\HRMS\tomcat\temp
+08-May-2026 20:15:28.303 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Git\cmd;C:\Users\Admin\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python39\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-24\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Local\Programs\Antigravity\bin;.]
+08-May-2026 20:15:28.920 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+08-May-2026 20:15:28.984 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1072] milliseconds
+08-May-2026 20:15:29.077 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-May-2026 20:15:29.078 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+08-May-2026 20:15:29.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\docs]
+08-May-2026 20:15:29.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\docs] has finished in [495] ms
+08-May-2026 20:15:29.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\examples]
+08-May-2026 20:15:30.580 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\examples] has finished in [992] ms
+08-May-2026 20:15:30.581 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager]
+08-May-2026 20:15:30.633 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager] has finished in [51] ms
+08-May-2026 20:15:30.633 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS]
+08-May-2026 20:15:31.467 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2026 20:15:31.479 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS] has finished in [846] ms
+08-May-2026 20:15:31.479 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\manager]
+08-May-2026 20:15:31.534 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\manager] has finished in [55] ms
+08-May-2026 20:15:31.535 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT]
+08-May-2026 20:15:31.560 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT] has finished in [25] ms
+08-May-2026 20:15:31.568 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+08-May-2026 20:15:31.609 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2622] milliseconds
+08-May-2026 20:44:36.164 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-May-2026 20:44:36.167 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\New folder\HRMS\tomcat
+08-May-2026 20:44:36.168 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\New folder\HRMS\tomcat
+08-May-2026 20:44:36.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-May-2026 20:44:36.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-May-2026 20:44:36.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-May-2026 20:44:36.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-May-2026 20:44:36.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-May-2026 20:44:36.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\New folder\HRMS\tomcat\conf\logging.properties
+08-May-2026 20:44:36.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-May-2026 20:44:36.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-May-2026 20:44:36.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-May-2026 20:44:36.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-May-2026 20:44:36.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\New folder\HRMS\tomcat
+08-May-2026 20:44:36.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\New folder\HRMS\tomcat
+08-May-2026 20:44:36.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\New folder\HRMS\tomcat\temp
+08-May-2026 20:44:36.191 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Git\cmd;C:\Users\Admin\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python39\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-24\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Local\Programs\Antigravity\bin;.]
+08-May-2026 20:44:36.515 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+08-May-2026 20:44:36.537 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [623] milliseconds
+08-May-2026 20:44:36.585 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-May-2026 20:44:36.586 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+08-May-2026 20:44:36.594 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\docs]
+08-May-2026 20:44:36.891 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\docs] has finished in [297] ms
+08-May-2026 20:44:36.892 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\examples]
+08-May-2026 20:44:37.736 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\examples] has finished in [844] ms
+08-May-2026 20:44:37.736 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager]
+08-May-2026 20:44:37.773 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager] has finished in [37] ms
+08-May-2026 20:44:37.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS]
+08-May-2026 20:44:38.574 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2026 20:44:38.583 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS] has finished in [808] ms
+08-May-2026 20:44:38.583 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\manager]
+08-May-2026 20:44:38.619 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\manager] has finished in [34] ms
+08-May-2026 20:44:38.619 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT]
+08-May-2026 20:44:38.640 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT] has finished in [21] ms
+08-May-2026 20:44:38.645 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+08-May-2026 20:44:38.669 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2130] milliseconds
+08-May-2026 21:09:33.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+08-May-2026 21:09:33.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+08-May-2026 21:09:33.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+08-May-2026 21:09:33.507 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-May-2026 21:09:33.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-May-2026 21:09:33.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-May-2026 21:09:33.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+08-May-2026 21:09:33.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+08-May-2026 21:09:33.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-May-2026 21:09:33.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\New folder\HRMS\tomcat
+08-May-2026 21:09:33.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\New folder\HRMS\tomcat
+08-May-2026 21:09:33.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-May-2026 21:09:33.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-May-2026 21:09:33.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-May-2026 21:09:33.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-May-2026 21:09:33.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-May-2026 21:09:33.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\New folder\HRMS\tomcat\conf\logging.properties
+08-May-2026 21:09:33.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-May-2026 21:09:33.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-May-2026 21:09:33.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-May-2026 21:09:33.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-May-2026 21:09:33.542 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\New folder\HRMS\tomcat
+08-May-2026 21:09:33.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\New folder\HRMS\tomcat
+08-May-2026 21:09:33.543 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\New folder\HRMS\tomcat\temp
+08-May-2026 21:09:33.563 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Git\cmd;C:\Users\Admin\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python39\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-24\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Local\Programs\Antigravity\bin;.]
+08-May-2026 21:09:34.262 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+08-May-2026 21:09:34.307 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1615] milliseconds
+08-May-2026 21:09:34.395 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-May-2026 21:09:34.397 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+08-May-2026 21:09:34.416 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\docs]
+08-May-2026 21:09:35.136 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\docs] has finished in [715] ms
+08-May-2026 21:09:35.137 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\examples]
+08-May-2026 21:09:36.647 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\examples] has finished in [1,508] ms
+08-May-2026 21:09:36.648 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager]
+08-May-2026 21:09:36.817 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager] has finished in [169] ms
+08-May-2026 21:09:36.819 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS]
+08-May-2026 21:09:38.425 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2026 21:09:38.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS] has finished in [1,625] ms
+08-May-2026 21:09:38.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\manager]
+08-May-2026 21:09:38.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\manager] has finished in [84] ms
+08-May-2026 21:09:38.530 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT]
+08-May-2026 21:09:38.608 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT] has finished in [78] ms
+08-May-2026 21:09:38.620 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+08-May-2026 21:09:38.674 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4364] milliseconds
+08-May-2026 21:29:18.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.98
+08-May-2026 21:29:18.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 5 2024 19:50:29 UTC
+08-May-2026 21:29:18.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.98.0
+08-May-2026 21:29:18.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+08-May-2026 21:29:18.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-May-2026 21:29:18.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-May-2026 21:29:18.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+08-May-2026 21:29:18.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+08-May-2026 21:29:18.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-May-2026 21:29:18.398 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\New folder\HRMS\tomcat
+08-May-2026 21:29:18.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\New folder\HRMS\tomcat
+08-May-2026 21:29:18.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-May-2026 21:29:18.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-May-2026 21:29:18.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-May-2026 21:29:18.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-May-2026 21:29:18.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-May-2026 21:29:18.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\New folder\HRMS\tomcat\conf\logging.properties
+08-May-2026 21:29:18.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-May-2026 21:29:18.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-May-2026 21:29:18.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-May-2026 21:29:18.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-May-2026 21:29:18.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\New folder\HRMS\tomcat
+08-May-2026 21:29:18.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\New folder\HRMS\tomcat
+08-May-2026 21:29:18.431 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\New folder\HRMS\tomcat\temp
+08-May-2026 21:29:18.449 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Git\cmd;C:\Users\Admin\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python39\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-24\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Local\Programs\Antigravity\bin;.]
+08-May-2026 21:29:19.414 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+08-May-2026 21:29:19.475 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1703] milliseconds
+08-May-2026 21:29:19.620 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-May-2026 21:29:19.621 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.98]
+08-May-2026 21:29:19.645 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\docs]
+08-May-2026 21:29:20.549 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\docs] has finished in [901] ms
+08-May-2026 21:29:20.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\examples]
+08-May-2026 21:29:21.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\examples] has finished in [1,320] ms
+08-May-2026 21:29:21.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager]
+08-May-2026 21:29:22.006 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\host-manager] has finished in [136] ms
+08-May-2026 21:29:22.007 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS]
+08-May-2026 21:29:24.074 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-May-2026 21:29:24.093 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\HRMS] has finished in [2,086] ms
+08-May-2026 21:29:24.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\manager]
+08-May-2026 21:29:24.185 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\manager] has finished in [92] ms
+08-May-2026 21:29:24.186 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT]
+08-May-2026 21:29:24.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\New folder\HRMS\tomcat\webapps\ROOT] has finished in [63] ms
+08-May-2026 21:29:24.258 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+08-May-2026 21:29:24.317 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4836] milliseconds

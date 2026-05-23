@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register – HRMS</title>
+  <meta name="description" content="HR Management System – New Employee Registration"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="gradient-bg"></div>
+
+  <main class="login-page">
+    <div class="glass-card login-card">
+
+      <!-- Logo -->
+      <div class="login-logo">
+        <div class="logo-icon">HR</div>
+        <h1>Join HRMS</h1>
+        <p>Create your account to get started</p>
+      </div>
+
+      <!-- Registration Form -->
+      <form id="register-form" autocomplete="off">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input id="reg-name" type="text" class="form-control" placeholder="e.g. John Doe" required/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input id="reg-email" type="email" class="form-control" placeholder="e.g. john@hrms.com" required/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <input id="reg-password" type="password" class="form-control" placeholder="Min 6 characters" required/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Department</label>
+          <select id="reg-dept" class="form-select">
+            <option value="">Select Department</option>
+            <option>Engineering</option>
+            <option>Marketing</option>
+            <option>HR</option>
+            <option>Finance</option>
+            <option>Operations</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary login-btn">
+          <span>Create Account</span>
+        </button>
+      </form>
+
+      <div class="login-hint">
+        Already have an account? <a href="login.html"><strong>Sign In</strong></a>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('register-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const params = {
+        action: 'register',
+        name:       document.getElementById('reg-name').value.trim(),
+        email:      document.getElementById('reg-email').value.trim(),
+        password:   document.getElementById('reg-password').value,
+        department: document.getElementById('reg-dept').value
+      };
+
+      try {
+        const data = await apiPost('api/login', params);
+        if (data && data.success) {
+          showToast(data.message, 'success');
+          setTimeout(() => window.location.href = 'login.html', 1500);
+        } else {
+          showToast((data && data.message) || 'Registration failed.', 'error');
+        }
+      } catch (err) {
+        showToast('Server error. Please try again later.', 'error');
+      }
+    });
+  </script>
+</body>
+</html>

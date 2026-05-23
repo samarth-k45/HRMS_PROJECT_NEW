@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile – HRMS</title>
+  <meta name="description" content="HR Management System – Employee Profile"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <div class="app-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">HR</div>
+        <div><h1>HRMS</h1><span>Management System</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Main</div>
+        <a href="dashboard.html"  class="nav-link"><span class="nav-icon">📊</span> Dashboard</a>
+        <a href="employee.html"   class="nav-link admin-only"><span class="nav-icon">👥</span> Employees</a>
+        <a href="attendance.html" class="nav-link"><span class="nav-icon">📅</span> Attendance</a>
+        <a href="leave.html"      class="nav-link"><span class="nav-icon">🏖</span> Leave</a>
+        <a href="payroll.html"    class="nav-link"><span class="nav-icon">💰</span> Payroll</a>
+        <a href="profile.html"    class="nav-link active"><span class="nav-icon">👤</span> My Profile</a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <div class="user-avatar" id="sidebar-avatar">A</div>
+          <div>
+            <div class="user-name" id="sidebar-user-name">Loading…</div>
+            <div class="user-role" id="sidebar-user-role"></div>
+          </div>
+        </div>
+        <button class="btn btn-logout" id="logout-btn">🚪 Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+      <div class="page-header">
+        <div>
+          <h2>👤 My Profile</h2>
+          <p>View your personal and employment details</p>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+        <!-- Avatar Card -->
+        <div class="glass-card profile-avatar-card">
+          <div class="profile-avatar" id="profile-avatar">A</div>
+          <div class="profile-name"   id="profile-name">Loading…</div>
+          <div class="profile-role"   id="profile-role">—</div>
+          <div class="profile-dept"   id="profile-dept">—</div>
+          <br/>
+          <a href="attendance.html" class="btn btn-ghost btn-sm">📅 My Attendance</a>
+          <br/><br/>
+          <a href="leave.html"      class="btn btn-ghost btn-sm">🏖 My Leaves</a>
+          <br/><br/>
+          <a href="payroll.html"    class="btn btn-ghost btn-sm">💰 My Payslip</a>
+        </div>
+
+        <!-- Details Card -->
+        <div class="glass-card" style="padding:28px;">
+          <h3 style="font-size:15px;color:var(--text-secondary);margin-bottom:20px;">Employee Details</h3>
+          <table class="details-table" style="width:100%;border-collapse:collapse;">
+            <tbody>
+              <tr>
+                <td>Employee ID</td>
+                <td id="d-id">—</td>
+              </tr>
+              <tr>
+                <td>Full Name</td>
+                <td id="d-name">—</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td id="d-email">—</td>
+              </tr>
+              <tr>
+                <td>Department</td>
+                <td id="d-dept">—</td>
+              </tr>
+              <tr>
+                <td>Role</td>
+                <td id="d-role">—</td>
+              </tr>
+              <tr>
+                <td>Salary</td>
+                <td id="d-salary">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script>
+    const user = requireAuth();
+    if (!user) throw new Error('Not authenticated');
+    initSidebar();
+
+    async function loadProfile() {
+      // For employee: fetch own profile; for admin, use session data
+      const emp = await apiGet('api/employees');
+      const profile = user.role === 'admin' ? null : emp;
+
+      if (profile) {
+        document.getElementById('profile-avatar').textContent = profile.name.charAt(0).toUpperCase();
+        document.getElementById('profile-name').textContent   = profile.name;
+        document.getElementById('profile-role').textContent   = profile.role === 'admin' ? '🛡 Administrator' : '👤 Employee';
+        document.getElementById('profile-dept').textContent   = profile.department || 'N/A';
+        document.getElementById('d-id').textContent     = '#' + profile.id;
+        document.getElementById('d-name').textContent   = profile.name;
+        document.getElementById('d-email').textContent  = profile.email;
+        document.getElementById('d-dept').textContent   = profile.department || 'N/A';
+        document.getElementById('d-role').innerHTML     = statusBadge(profile.role);
+        document.getElementById('d-salary').textContent = formatCurrency(profile.salary);
+      } else {
+        // Admin: use session info
+        document.getElementById('profile-avatar').textContent = user.name.charAt(0).toUpperCase();
+        document.getElementById('profile-name').textContent   = user.name;
+        document.getElementById('profile-role').textContent   = '🛡 Administrator';
+        document.getElementById('profile-dept').textContent   = 'Management';
+        document.getElementById('d-id').textContent     = '#' + user.empId;
+        document.getElementById('d-name').textContent   = user.name;
+        document.getElementById('d-email').textContent  = '(Admin Account)';
+        document.getElementById('d-dept').textContent   = 'Management';
+        document.getElementById('d-role').innerHTML     = statusBadge('admin');
+        document.getElementById('d-salary').textContent = '—';
+      }
+    }
+
+    loadProfile();
+  </script>
+</body>
+</html>

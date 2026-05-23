@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance – HRMS</title>
+  <meta name="description" content="HR Management System – Attendance Tracking"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <div class="app-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">HR</div>
+        <div><h1>HRMS</h1><span>Management System</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Main</div>
+        <a href="dashboard.html"  class="nav-link"><span class="nav-icon">📊</span> Dashboard</a>
+        <a href="employee.html"   class="nav-link admin-only"><span class="nav-icon">👥</span> Employees</a>
+        <a href="attendance.html" class="nav-link active"><span class="nav-icon">📅</span> Attendance</a>
+        <a href="leave.html"      class="nav-link"><span class="nav-icon">🏖</span> Leave</a>
+        <a href="payroll.html"    class="nav-link"><span class="nav-icon">💰</span> Payroll</a>
+        <a href="profile.html"    class="nav-link"><span class="nav-icon">👤</span> My Profile</a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <div class="user-avatar" id="sidebar-avatar">A</div>
+          <div>
+            <div class="user-name" id="sidebar-user-name">Loading…</div>
+            <div class="user-role" id="sidebar-user-role"></div>
+          </div>
+        </div>
+        <button class="btn btn-logout" id="logout-btn">🚪 Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+      <div class="page-header">
+        <div>
+          <h2>📅 Attendance</h2>
+          <p id="today-label">Today: —</p>
+        </div>
+      </div>
+
+      <!-- Admin: Mark Employee Attendance -->
+      <div id="admin-mark-section" style="display:none; margin-bottom:24px;">
+        <div class="glass-card" style="padding:24px;">
+          <h3 style="font-size:15px;color:var(--text-secondary);margin-bottom:16px;">🛡 Mark Employee Attendance</h3>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;">
+            <div style="flex:1;min-width:200px;">
+              <label style="font-size:12px;color:var(--text-muted);display:block;margin-bottom:6px;">Select Employee</label>
+              <select id="mark-emp-select" class="form-input" style="width:100%;padding:10px 14px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:10px;color:var(--text-primary);font-size:14px;">
+                <option value="">-- Choose Employee --</option>
+              </select>
+            </div>
+            <div class="attendance-actions" style="display:flex;gap:10px;">
+              <button class="attend-btn present" id="btn-present" onclick="markAttendance('Present')">
+                <span style="font-size:28px;">✅</span>
+                Mark Present
+              </button>
+              <button class="attend-btn absent" id="btn-absent" onclick="markAttendance('Absent')">
+                <span style="font-size:28px;">❌</span>
+                Mark Absent
+              </button>
+            </div>
+          </div>
+          <div id="mark-feedback" style="display:none;margin-top:14px;"></div>
+        </div>
+      </div>
+
+      <!-- Employee: Self-mark attendance -->
+      <div id="emp-mark-section" style="display:none; margin-bottom:24px;">
+        <div class="glass-card" style="padding:24px;">
+          <h3 style="font-size:15px;color:var(--text-secondary);margin-bottom:16px;">📋 Mark Today's Attendance</h3>
+          <div id="emp-already-marked" style="display:none;margin-bottom:14px;padding:12px 16px;border-radius:10px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);color:var(--success);font-size:14px;"></div>
+          <div class="attendance-actions" style="display:flex;gap:12px;">
+            <button class="attend-btn present" id="btn-emp-present" onclick="markSelfAttendance('Present')">
+              <span style="font-size:28px;">✅</span>
+              Mark Present
+            </button>
+            <button class="attend-btn absent" id="btn-emp-absent" onclick="markSelfAttendance('Absent')">
+              <span style="font-size:28px;">❌</span>
+              Mark Absent
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="glass-card">
+        <div style="padding:18px 20px;border-bottom:1px solid var(--glass-border);display:flex;align-items:center;justify-content:space-between;">
+          <h3 style="font-size:15px;color:var(--text-secondary);" id="table-heading">Attendance Records</h3>
+          <input type="text" id="att-search" class="search-box" placeholder="🔍 Filter…" style="max-width:240px;"/>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th id="col-name" style="display:none;">Employee</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="att-tbody">
+              <tr><td colspan="4" style="text-align:center;padding:32px;color:var(--text-muted);">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script>
+    const user = requireAuth();
+    if (!user) throw new Error('Not authenticated');
+    initSidebar();
+
+    let allRecords = [];
+    let employeeList = [];
+    const isAdmin = user.role === 'admin';
+
+    // Show name column for admin
+    if (isAdmin) document.getElementById('col-name').style.display = '';
+
+    // Date label
+    document.getElementById('today-label').textContent =
+      'Today: ' + new Date().toLocaleDateString('en-IN', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+
+    // Show correct section based on role
+    if (isAdmin) {
+      document.getElementById('admin-mark-section').style.display = '';
+      document.getElementById('table-heading').textContent = 'All Employee Attendance Records';
+    } else {
+      document.getElementById('emp-mark-section').style.display = '';
+      document.getElementById('table-heading').textContent = 'My Attendance Records';
+    }
+
+    // ---- Load attendance ----
+    async function loadAttendance() {
+      const data = await apiGet('api/attendance');
+      if (!data) return;
+
+      allRecords = data.records || [];
+
+      if (isAdmin && data.employees) {
+        employeeList = data.employees;
+        const select = document.getElementById('mark-emp-select');
+        select.innerHTML = '<option value="">-- Choose Employee --</option>';
+        employeeList.forEach(emp => {
+          const opt = document.createElement('option');
+          opt.value = emp.id;
+          opt.textContent = emp.name;
+          select.appendChild(opt);
+        });
+      }
+
+      // Check if employee already marked today
+      if (!isAdmin) {
+        checkTodayStatus();
+      }
+
+      renderTable(allRecords);
+    }
+
+    // ---- Check if employee already marked attendance today ----
+    function checkTodayStatus() {
+      const today = todayStr();
+      const todayRecord = allRecords.find(r => r.date === today);
+      const msgEl = document.getElementById('emp-already-marked');
+      const btnPresent = document.getElementById('btn-emp-present');
+      const btnAbsent = document.getElementById('btn-emp-absent');
+
+      if (todayRecord) {
+        msgEl.style.display = '';
+        if (todayRecord.status === 'Present') {
+          msgEl.style.background = 'rgba(34,197,94,0.1)';
+          msgEl.style.borderColor = 'rgba(34,197,94,0.2)';
+          msgEl.style.color = 'var(--success)';
+          msgEl.textContent = '✅ You have marked yourself as Present today. You can change it below.';
+        } else {
+          msgEl.style.background = 'rgba(239,68,68,0.1)';
+          msgEl.style.borderColor = 'rgba(239,68,68,0.2)';
+          msgEl.style.color = 'var(--danger)';
+          msgEl.textContent = '❌ You have marked yourself as Absent today. You can change it below.';
+        }
+      } else {
+        msgEl.style.display = 'none';
+      }
+    }
+
+    function renderTable(list) {
+      const tbody = document.getElementById('att-tbody');
+      if (!list.length) {
+        tbody.innerHTML = `<tr><td colspan="4"><div class="empty-state"><div class="empty-icon">📅</div><p>No attendance records yet.</p></div></td></tr>`;
+        return;
+      }
+      tbody.innerHTML = list.map((r, i) => `
+        <tr>
+          <td>${i + 1}</td>
+          ${isAdmin ? `<td><strong>${r.empName || '—'}</strong></td>` : ''}
+          <td>${formatDate(r.date)}</td>
+          <td>${statusBadge(r.status)}</td>
+        </tr>
+      `).join('');
+    }
+
+    // ---- Filter ----
+    document.getElementById('att-search').addEventListener('input', debounce(e => {
+      const q = e.target.value.toLowerCase();
+      renderTable(allRecords.filter(r =>
+        (r.empName || '').toLowerCase().includes(q) ||
+        r.date.includes(q) || r.status.toLowerCase().includes(q)
+      ));
+    }));
+
+    // ---- Mark Attendance (Admin - for selected employee) ----
+    async function markAttendance(status) {
+      const empId = document.getElementById('mark-emp-select').value;
+      if (!empId) {
+        showToast('Please select an employee first.', 'error');
+        return;
+      }
+      const data = await apiPost('api/attendance', { empId, status });
+      if (data && data.success) {
+        showToast(data.message, 'success');
+        loadAttendance();
+      } else {
+        showToast((data && data.message) || 'Failed.', 'error');
+      }
+    }
+
+    // ---- Mark Self Attendance (Employee) ----
+    async function markSelfAttendance(status) {
+      const data = await apiPost('api/attendance', { empId: user.empId, status });
+      if (data && data.success) {
+        showToast(data.message, 'success');
+        loadAttendance();
+      } else {
+        showToast((data && data.message) || 'Failed to mark attendance.', 'error');
+      }
+    }
+
+    loadAttendance();
+  </script>
+</body>
+</html>

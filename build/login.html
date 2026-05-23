@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – HRMS</title>
+  <meta name="description" content="HR Management System – Secure Login Portal"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="gradient-bg"></div>
+
+  <main class="login-page">
+    <div class="glass-card login-card">
+
+      <!-- Logo -->
+      <div class="login-logo">
+        <div class="logo-icon">HR</div>
+        <h1>HR Management System</h1>
+        <p>Sign in to continue to your dashboard</p>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" autocomplete="off" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input id="email" type="email" class="form-control"
+                 placeholder="e.g. admin@hrms.com" required autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input id="password" type="password" class="form-control"
+                 placeholder="Enter your password" required autocomplete="new-password"/>
+        </div>
+
+        <!-- Error message area -->
+        <div id="login-error" style="color:var(--danger);font-size:13px;margin-bottom:12px;display:none;"></div>
+
+        <button type="submit" id="login-btn" class="btn btn-primary login-btn">
+          <span id="btn-text">Sign In</span>
+        </button>
+      </form>
+
+      <div class="login-hint">
+        Don't have an account? <a href="register.html"><strong>Register here</strong></a>
+      </div>
+
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Redirect if already logged in
+    if (getSession()) window.location.href = 'dashboard.html';
+
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email    = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const errEl    = document.getElementById('login-error');
+      const btnText  = document.getElementById('btn-text');
+
+      errEl.style.display = 'none';
+      btnText.textContent = 'Signing in…';
+
+      try {
+        const data = await apiPost('api/login', { email, password });
+
+        if (data && data.success) {
+          setSession({ empId: data.empId, name: data.name, role: data.role });
+          showToast(`Welcome back, ${data.name}! 👋`, 'success');
+          setTimeout(() => window.location.href = 'dashboard.html', 600);
+        } else {
+          errEl.textContent = (data && data.message) || 'Invalid credentials.';
+          errEl.style.display = 'block';
+          btnText.textContent = 'Sign In';
+        }
+      } catch (err) {
+        errEl.textContent = 'Server error. Is Tomcat running?';
+        errEl.style.display = 'block';
+        btnText.textContent = 'Sign In';
+      }
+    });
+  </script>
+</body>
+</html>
