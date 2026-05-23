@@ -21,20 +21,12 @@ This is a Human Resource Management System (HRMS) developed using Java and MySQL
 ## Author
 Samarth Kotkar
 
+![Registration](./Screenshot%202026-05-23%20211628.png)
 
-## Screenshots
+![Login](./Screenshot%202026-05-23%20211724.png)
 
-### Registration Page
-![Registration](Screenshot 2026-05-23 211628.png)
+![Dashboard](./Screenshot%202026-05-23%20211740.png)
 
-### Login Page
-![Login](Screenshot 2026-05-23 211724.png)
+![Profile](./Screenshot%202026-05-23%20211758.png)
 
-### Dashboard
-![Dashboard](Screenshot 2026-05-23 211740.png)
-
-### My Profile
-![Profile](Screenshot 2026-05-23 211758.png)
-
-### Attendance Page
-![Attendance](Screenshot 2026-05-23 211815.png)
+![Attendance](./Screenshot%202026-05-23%20211815.png)
